@@ -1,5 +1,4 @@
 from flask import Flask, redirect, url_for, render_template, request
-from sheets import *
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 
