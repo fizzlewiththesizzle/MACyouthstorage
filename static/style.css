@@ -1,3 +1,9 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,700");
+
 .bg-gradient-1 {
     background-image: linear-gradient(to left, #00c0fa,#267bff);
 }
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+  }
