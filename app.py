@@ -6,12 +6,37 @@ app = Flask(__name__)
 def home():
 	return render_template("index.html", content="Testing")
 
-@app.route("/add")
+@app.route("/add", methods= ["GET", "POST"])
 def add():
+
+    if request.method == "POST":
+
+        req= request.form
+
+        equipmentName= req["equipmentName"]
+        equipmentQuantity= req["equipmentQuantity"]
+
+        print(equipmentName, equipmentQuantity)
+
+        return redirect(request.url)
+
     return render_template("add.html")
 
-@app.route("/signout")
-def signout():   
+@app.route("/signout", methods= ["GET", "POST"])
+def signout(): 
+
+    if request.method == "POST": 
+
+        req= request.form
+
+        userName= req["userName"]
+        equipmentName= req["equipmentName"]
+        equipmentQuantity= req["equipmentQuantity"]
+
+        print(userName, equipmentName, equipmentQuantity)
+
+        return redirect(request.url)
+      
     return render_template("signout.html")
 
 if __name__ == "__main__":

@@ -23,18 +23,18 @@
             </div>
           </nav>
           <h1>Sign Out Equipment</h1>
-<form>
+<form action= "/signout" method= "post">
     <div class="mb-3">
         <label for="userName" class="form-label">Name</label>
-        <input type="text" class="form-control" id="userName" required
+        <input type="text" class="form-control" name="userName" required
       </div>
     <div class="mb-3">
       <label for="equipmentName" class="form-label">Equipment Name</label>
-      <input type="text" class="form-control" id="equipmentName" required
+      <input type="text" class="form-control" name="equipmentName" required
     </div>
     <div class="mb-3">
       <label for="equipmentQuantity" class="form-label">Quantity</label>
-      <input type="text" class="form-control" id="equipmentQuantity" required
+      <input type="text" class="form-control" name="equipmentQuantity" required
     </div>
     <button type="submit" class="btn btn-primary">Add</button>
   </form>

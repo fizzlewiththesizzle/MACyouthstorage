@@ -23,15 +23,18 @@
             </div>
           </nav>
           <h1>Add Items</h1>
-<form>
+<form action= "/add" method= "post">
+
     <div class="mb-3">
       <label for="equipmentName" class="form-label">Equipment Name</label>
-      <input type="text" class="form-control" id="equipmentName" required
+      <input type="text" class="form-control" name="equipmentName" required
     </div>
+
     <div class="mb-3">
       <label for="equipmentQuantity" class="form-label">Quantity</label>
-      <input type="text" class="form-control" id="equipmentQuantity" required >
+      <input type="text" class="form-control" name="equipmentQuantity" required >
     </div>
+
     <button type="submit" class="btn btn-primary">Add</button>
   </form>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
