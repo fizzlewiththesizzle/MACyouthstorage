@@ -28,7 +28,7 @@ def add():
         equipmentQuantity = request.form.get("equipmentQuantity")
 
         sheet = service.spreadsheets()
-        result = sheet.values().get(spreadsheetId=sheetID, range="Sheet1!A2:B500").execute()
+        result = sheet.values().get(spreadsheetId=sheetID, range="Sheet1!A2:B1000").execute()
         values = result.get('values', [])
 
         data = [[equipmentName, equipmentQuantity]] #array of arrays, could make data equals textfield input for frontend
