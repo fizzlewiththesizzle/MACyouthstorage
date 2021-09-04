@@ -54,6 +54,10 @@ def signout():
       
     return render_template("signout.html")
 
+@app.route("/signedout")
+def signedout():
+    return render_template("signedout.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
 
